@@ -8,6 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-paper: oklch(0.9865 0.013 82.4);
+  --color-paper-solid: oklch(0.9465 0.033 82.4);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
