@@ -6,8 +6,8 @@ const styles = {
 
 export default function Header({ children }: PropsWithChildren) {
     return (
-        <header className="sticky top-0 border-b-20 border-paper-solid bg-white/80 backdrop-blur-xs">
-            <div className="flex flex-col items-center justify-center m-4">
+        <header className="paper rounded-xl max-w-5xl w-full my-20 top-0 shadow-2xl shadow-black">
+            <div className="flex flex-col items-center justify-center p-4">
                 <h1 className={styles.title}>CSS Playground</h1>
                 <p>CSS Cheat Sheet with visual examples !</p>
             </div>

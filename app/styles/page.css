@@ -6,15 +6,23 @@ body {
 
 h2 {
     font-weight: 600;
+    font-size: 2rem;
+    line-height: 32px;
 }
 
 h3 {
     font-weight: 600;
 }
 
-.content {
+.wood {
+    background-color: var(--color-wood);
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 37px 37px;
+        url("/wood-pattern.png");
+}
+
+.paper {
+    background-color: white;
+    background-image:
+        linear-gradient(var(--color-paper-solid) 1px, transparent 1px);
+    background-size: 32px 32px;
 }

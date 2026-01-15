@@ -7,18 +7,18 @@ import "./styles/page.css";
 
 const inlineStyles = {
     exampleBox: "rounded-lg",
-    section: "my-16 flex flex-col gap-8",
-    sectionGrid: "grid grid-cols-2 gap-6",
+    section: "my-8 flex flex-col gap-8",
+    sectionGrid: "grid grid-cols-2 gap-8",
 }
 
 export default function Home() {
     return (
-        <div className="content bg-paper">
-            <Header></Header>
+        <div className="wood bg-paper">
             <div className="flex flex-col items-center">
-                <main className="max-w-5xl text-gray-900 px-8 bg-white/90 border-x-20 border-paper-solid">
+                <Header></Header>
+                <main className="paper rounded-xl max-w-5xl text-gray-900 px-8 border-paper-solid shadow-2xl shadow-black mb-20">
                     <section id="Spacing" className={inlineStyles.section}>
-                        <h2 className="text-3xl">Spacing</h2>
+                        <h2>Spacing</h2>
                         {/* TODO : right/left/x/y */}
                         <div className={inlineStyles.sectionGrid}>
                             <VisualExample
