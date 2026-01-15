@@ -14,16 +14,16 @@ type VisualExampleProps = PropsWithChildren & {
 
 export default function VisualExample({ title, description, children, code, color = "blue" }: VisualExampleProps) {
     return (
-        <div className={`border-gray-500 bg-paper hover:bg-paper-solid hover:border-gray-900 hover:shadow-lg p-6 border-2 flex flex-col gap-4 rounded-xl transition-all`}>
-            <div>
+        <div className={`border-gray-500 bg-paper hover:bg-paper-solid hover:border-black hover:shadow-[2px_2px_black] p-3.75 border-2 flex flex-col gap-3.75 rounded-xl transition-all hover:-translate-x-0.5 hover:-translate-y-0.5`}>
+            <div className="flex flex-col">
                 <h3 className="text-lg">{title}</h3>
-                <span className="text-sm text-gray-600">{description}</span>
+                <span className="text-sm leading-4 text-gray-600 min-h-8">{description}</span>
             </div>
-            <div className="border-2 border-dashed border-gray-900 bg-white rounded-xl p-4">
+            <div className="border-2 border-dashed border-gray-900 bg-white rounded-xl p-4 h-32">
                 {children}
             </div>
             <pre className="bg-gray-900/90 text-white p-4 rounded-xl text-sm">
-                <code>{code}</code>
+                <code className="text-normal leading-8">{code}</code>
             </pre>
         </div>
     )
