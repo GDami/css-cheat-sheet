@@ -12,6 +12,7 @@ h2 {
 
 h3 {
     font-weight: 600;
+    line-height: 32px;
 }
 
 .wood {
@@ -23,6 +24,29 @@ h3 {
 .paper {
     background-color: white;
     background-image:
-        linear-gradient(var(--color-paper-solid) 1px, transparent 1px);
+        linear-gradient(var(--color-rose-100) 1px, transparent 1px);
     background-size: 32px 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.undersheet {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-gray-100);
+    z-index: -1;
+
+    &.shifted-1 {
+        transform: translate(8px, 8px);
+    }
+    &.shifted-2 {
+        transform: translate(16px, 16px);
+    }
+    &.shifted-3 {
+        transform: translate(24px, 24px);
+    }
 }
