@@ -1,18 +1,14 @@
-import { PropsWithChildren } from "react";
-
 const styles = {
-    title: "text-3xl font-bold mb-2",
+    title: "text-2xl font-bold",
+    subtitle: "pb-0.25",
 }
 
-export default function Header({ children }: PropsWithChildren) {
+export default function Header() {
     return (
-        <header className="paper rounded-xl max-w-5xl w-full my-20 top-0 shadow-2xl shadow-black">
-            <div className="flex flex-col items-center justify-center p-4">
+        <header className="menus w-full top-0 shadow-2xl shadow-black border-b-8">
+            <div className="flex px-6 py-2 gap-4 items-end">
                 <h1 className={styles.title}>CSS Playground</h1>
-                <p>CSS Cheat Sheet with visual examples !</p>
-            </div>
-            <div>
-                { children }
+                <p className={styles.subtitle}>CSS Cheat Sheet with visual examples !</p>
             </div>
         </header>
     )
