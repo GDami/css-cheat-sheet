@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="wood w-full bg-paper text-wood overflow-auto">
             <div className="flex justify-center">
-                <div className="z-1 relative m-8 w-full shadow-2xl shadow-black">
+                <div className="z-1 relative max-w-5xl m-8 w-full shadow-2xl shadow-black">
                     <div className="undersheet shifted-3 rounded-xl shadow-lg shadow-black"></div>
                     <div className="undersheet shifted-2 rounded-xl shadow-lg shadow-black"></div>
                     <div className="undersheet shifted-1 rounded-xl shadow-lg shadow-black"></div>
